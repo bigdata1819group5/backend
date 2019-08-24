@@ -1,3 +1,3 @@
 database:
   keySpace: streaming
-  addr: localhost:9042
+  addr: cassandra-1:9042
