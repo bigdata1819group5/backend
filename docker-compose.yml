@@ -8,6 +8,8 @@ services:
     - redis
     volumes:
     - ./code:/code
+    networks:
+    - decluster_network
   redis:
     image: 'bitnami/redis:latest'
     environment:
