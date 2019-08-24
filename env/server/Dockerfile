@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 MAINTAINER AryanSadeghi
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
-    php7.2 php7.2-cli php7.2-gd php7.2-mbstring php7.2-cassandra \
+    php7.2 php7.2-cli php7.2-gd php7.2-mbstring \
     php7.2-opcache php7.2-odbc php7.2-xml php-memcached composer \
     php7.2-zip
 
