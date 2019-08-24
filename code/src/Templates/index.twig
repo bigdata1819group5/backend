@@ -1,0 +1,16 @@
+{% extends 'base.twig' %}
+{% block content %}
+    <ul style="list-style: none">
+        {% for link in links %}
+            <li style="float: left;margin: 20px;">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ link.name }}</h5>
+                        <p class="card-text">{{ link.createTime }}</p>
+                        <a href="/view/{{ link.id }}" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
